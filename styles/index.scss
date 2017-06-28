@@ -1,0 +1,13 @@
+@import 'normalize.css';
+@import 'react-md/src/scss/react-md';
+
+@import './variables';
+
+p {
+  font-size: xx-large;
+  color: $primary-color;
+}
+
+.bg-red-100{
+  background-color: $md-red-100;
+}

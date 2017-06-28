@@ -10,7 +10,7 @@ export default class Index extends React.Component {
                     <Link href={'about'}>
                         <a>About</a>
                     </Link>
-                    <h1> Hello ReactJs and universal by NextJs</h1>
+                    <h1 className="bg-red-100"> Hello ReactJs and universal by NextJs</h1>
                 </LayoutMain>
             </div>
         );
