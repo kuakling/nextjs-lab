@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import LayoutMain from "../layouts/main"
 
 export default class Index extends React.Component {
     render () {
@@ -9,10 +10,10 @@ export default class Index extends React.Component {
                 <Head>
                     <title>Custom title on page</title>
                 </Head>
-                <Link href={'/'}>
-                    <a>Home</a>
-                </Link>
-                <h1> Mr.Surakit Choodet</h1>
+                <LayoutMain>
+                    <h1> Mr.Surakit Choodet</h1>
+                    <h2>kuakling@gmail.com</h2>
+                </LayoutMain>
             </div>
         );
     }
