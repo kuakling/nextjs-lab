@@ -1,0 +1,45 @@
+$input-padding: 7;
+$input-box-color: $md-blue-grey-500;
+
+.md-text-field-container--input{
+    margin-top: 33px;
+}
+.md-text-field{
+    padding: $input-padding+px;
+    -webkit-box-shadow: 0px 0px 1px 0px $input-box-color;
+    -moz-box-shadow: 0px 0px 1px 0px $input-box-color;
+    box-shadow: 0px 0px 1px 0px $input-box-color;
+}
+.md-text-field--floating-margin{
+    margin-top: 0;
+}
+.md-text-field:focus{
+    -webkit-box-shadow: 0px 0px 1px 0px $primary-color;
+    -moz-box-shadow: 0px 0px 1px 0px $primary-color;
+    box-shadow: 0px 0px 1px 0px $primary-color;
+}
+.md-divider--text-field{
+    margin-top: 0;
+}
+.md-floating-label{
+    position: static;
+    // padding: $input-padding+px;
+}
+
+
+// input[type="password"] + hr.md-divider--text-field{
+//     width: calc(100% - 24px);
+// }
+.md-text-field-multiline-container + hr.md-divider--text-field{
+    margin-top: -5px;
+}
+
+//Show password button
+.md-text-field--inline-indicator{
+    width: 100%;
+    padding-right: 30px;
+}
+.md-password-btn{
+    top: 17px;
+    right: $input-padding+px;
+}

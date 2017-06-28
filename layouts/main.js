@@ -63,12 +63,20 @@ var LayoutMain = React.createClass ({
                       key='0'
                       component={NavigationLink}
                       href='/'
-                      leftIcon={<FontIcon>inbox</FontIcon>}
+                      leftIcon={<FontIcon>home</FontIcon>}
                       tileClassName='md-list-tile--mini'
                       primaryText={'Root'}
                     />,
                     <ListItem
                       key='1'
+                      component={NavigationLink}
+                      href='/modules/form/input'
+                      leftIcon={<FontIcon>check_box</FontIcon>}
+                      tileClassName='md-list-tile--mini'
+                      primaryText={'Form Inputs'}
+                    />,
+                    <ListItem
+                      key='2'
                       component={NavigationLink}
                       href='/non-existing-page'
                       leftIcon={<FontIcon>star</FontIcon>}

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import LayoutMain from "../layouts/main"
 
-export default class Index extends React.Component {
+export default class About extends React.Component {
     render () {
         return (
             <div>
