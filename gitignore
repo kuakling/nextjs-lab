@@ -4,5 +4,6 @@
 
 /.next/*
 /next/*
+.next
 
 yarn.lock
