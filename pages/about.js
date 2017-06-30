@@ -9,6 +9,8 @@ import CardText from 'react-md/lib/Cards/CardText';
 import Media, { MediaOverlay } from 'react-md/lib/Media';
 import Avatar from 'react-md/lib/Avatars';
 import Button from 'react-md/lib/Buttons';
+
+import Nprogress from '../layouts/nprogress'
  
 export default class AboutPage extends React.Component {
   static getInitialProps({ req }) {
@@ -20,6 +22,7 @@ export default class AboutPage extends React.Component {
   render() {
     return (
       <div>
+        <Nprogress />
         <Card style={{ maxWidth: 600 }} className="md-block-centered">
           <Media>
             <img src="http://www.comm-sci.pn.psu.ac.th/media/parallax/img/bg.png" role="presentation" />

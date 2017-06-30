@@ -24,12 +24,15 @@ import {Router} from '../routes';
 import Card from 'react-md/lib/Cards/Card';
 import CardTitle from 'react-md/lib/Cards/CardTitle';
 import CardActions from 'react-md/lib/Cards/CardActions';
+
+import Nprogress from '../layouts/nprogress'
  
 export default class IndexPage extends React.Component {
 
   render() {
     return (
       <div>
+        <Nprogress />
         <h1>สวัสดีครับ ยินดีต้อนรับสู่ห้องทดลอง NextJs</h1>
         <hr />
         <div className="md-grid grid-example">

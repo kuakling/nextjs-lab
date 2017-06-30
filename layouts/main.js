@@ -1,10 +1,13 @@
 import React from "react"
-import Link from 'next/link'
-import Router from 'next/router'
+// import Link from 'next/link'
+// import Router from 'next/router'
+import {Link} from 'next-url-prettifier'
+import {Router} from '../routes'
 import NavigationDrawer from 'react-md/lib/NavigationDrawers'
 import ListItem from 'react-md/lib/Lists/ListItem'
 import FontIcon from 'react-md/lib/FontIcons'
 import MenuButton from 'react-md/lib/Menus/MenuButton'
+import Nprogress from './nprogress'
 
 
 class NavigationLink extends React.Component {
@@ -12,11 +15,8 @@ class NavigationLink extends React.Component {
     const { href, as, children, ..._props } = this.props
     return (
       <div {..._props} style={{padding: 0}}>
-        <Link href={href} as={as}>
-          <a className='md-list-tile md-list-tile--mini' style={{width: '100%', overflow: 'hidden'}}>
-            {children}
-          </a>
-        </Link>
+        
+        <Link route={Router.linkPage(href)}><a className='md-list-tile md-list-tile--mini' style={{width: '100%', overflow: 'hidden'}}>{children}</a></Link>
       </div>
     )
   }
@@ -35,7 +35,7 @@ function customFunction(){
 }
 
 
-var LayoutMain = React.createClass ({
+var LayoutMain = () => ({
     
     render(){
     
@@ -57,12 +57,13 @@ var LayoutMain = React.createClass ({
     
         return (
             <div>
-            <NavigationDrawer
+              <Nprogress />
+              <NavigationDrawer
                 navItems={[
                     <ListItem
                       key='0'
                       component={NavigationLink}
-                      href='/'
+                      href=''
                       leftIcon={<FontIcon>home</FontIcon>}
                       tileClassName='md-list-tile--mini'
                       primaryText={'Root'}
@@ -70,7 +71,7 @@ var LayoutMain = React.createClass ({
                     <ListItem
                       key='1'
                       component={NavigationLink}
-                      href='/modules/form/input'
+                      href='modules/form/input'
                       leftIcon={<FontIcon>check_box</FontIcon>}
                       tileClassName='md-list-tile--mini'
                       primaryText={'Form Inputs'}
@@ -78,7 +79,7 @@ var LayoutMain = React.createClass ({
                     <ListItem
                       key='2'
                       component={NavigationLink}
-                      href='/non-existing-page'
+                      href='non-existing-page'
                       leftIcon={<FontIcon>star</FontIcon>}
                       tileClassName='md-list-tile--mini'
                       primaryText={'404 page'}
