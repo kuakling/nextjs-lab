@@ -45,7 +45,7 @@ export default class Index extends React.Component {
         return (
             <div>
                 <Head>
-                    <title>Custom title on page</title>
+                    <title>Form Examples</title>
                 </Head>
                 <LayoutMain>
                     <div className="content" style={{flex: 1}}>

@@ -39,21 +39,21 @@ var LayoutMain = React.createClass ({
     
     render(){
     
-    const menuButton = (
-      <MenuButton
-          id="vert-menu"
-          icon
-          buttonChildren="more_vert"
-          className="menu-example"
-          tooltipLabel="Open some menu"
-        >
+    // const menuButton = (
+    //   <MenuButton
+    //       id="vert-menu"
+    //       icon
+    //       buttonChildren="more_vert"
+    //       className="menu-example"
+    //       tooltipLabel="Open some menu"
+    //     >
         
-          <ListItem primaryText="Home" onClick={handleRoute('/')} />
-          <ListItem primaryText="About" onClick={handleRoute('/about')} />
-          <ListItem primaryText="Call function" onClick={customFunction} />
-          <ListItem primaryText="Item Four" />
-        </MenuButton>
-    )
+    //       <ListItem primaryText="Home" onClick={handleRoute('/')} />
+    //       <ListItem primaryText="About" onClick={handleRoute('/about')} />
+    //       <ListItem primaryText="Call function" onClick={customFunction} />
+    //       <ListItem primaryText="Item Four" />
+    //     </MenuButton>
+    // )
     
         return (
             <div>
@@ -88,8 +88,8 @@ var LayoutMain = React.createClass ({
                 // mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY_MINI}
                 // tabletDrawerType={NavigationDrawer.DrawerTypes.PERSISTENT_MINI}
                 desktopDrawerType={NavigationDrawer.DrawerTypes.CLIPPED}
-                toolbarTitle='Hello, World!'
-                toolbarActions={menuButton}
+                toolbarTitle='NextJs-LAB'
+                // toolbarActions={menuButton}
             >
                 <div className="content" style={{flex: 1}}>
                     {this.props.children}
