@@ -10,6 +10,10 @@ const routes = [
   {
     page: 'modules/form/select',
     prettyUrl: '/form/select'
+  },
+  {
+    page: 'modules/form/option',
+    prettyUrl: '/form/option'
   }
 ];
 

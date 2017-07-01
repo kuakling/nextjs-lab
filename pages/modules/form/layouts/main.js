@@ -73,7 +73,7 @@ var LayoutMain = () => ({
                       href='modules/form/index'
                       leftIcon={<FontIcon>check_box</FontIcon>}
                       tileClassName='md-list-tile--mini'
-                      primaryText={'Form'}
+                      primaryText={'Form Index'}
                     />,
                     <ListItem
                       key='2'
@@ -90,6 +90,14 @@ var LayoutMain = () => ({
                       leftIcon={<FontIcon>check_box</FontIcon>}
                       tileClassName='md-list-tile--mini'
                       primaryText={'Select'}
+                    />,
+                    <ListItem
+                      key='4'
+                      component={NavigationLink}
+                      href='modules/form/option'
+                      leftIcon={<FontIcon>check_box</FontIcon>}
+                      tileClassName='md-list-tile--mini'
+                      primaryText={'Option'}
                     />
                 ]}
                 contentClassName='md-grid'
