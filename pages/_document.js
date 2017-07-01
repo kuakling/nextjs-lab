@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
           <link rel='stylesheet' href='/static/react-md.min.css' />
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' />
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Material+Icons' />
-          <link rel="icon" href="static/app_icons/favicon.ico" />
+          <link rel="icon" href="/static/app_icons/favicon.ico" />
           <title>Hello NextJs</title>
           <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         </Head>

@@ -24,6 +24,7 @@ import {Router} from '../routes';
 import Card from 'react-md/lib/Cards/Card';
 import CardTitle from 'react-md/lib/Cards/CardTitle';
 import CardActions from 'react-md/lib/Cards/CardActions';
+import Button from 'react-md/lib/Buttons';
 
 import Nprogress from '../layouts/nprogress'
  
@@ -40,7 +41,7 @@ export default class IndexPage extends React.Component {
             <Card className="weather-card">
               <CardTitle title="About Page" subtitle="เกี่ยวกับเรา" />
               <CardActions className="md-divider-border md-divider-border--top">
-                <Link route={Router.linkPage('about')}><a>Show</a></Link>
+                <Link route={Router.linkPage('about')}><Button raised primary label="Show" /></Link>
               </CardActions>
             </Card>
           </div>
@@ -48,7 +49,7 @@ export default class IndexPage extends React.Component {
             <Card className="weather-card">
               <CardTitle title="Input" subtitle="Form inputs on admin theme" />
               <CardActions className="md-divider-border md-divider-border--top">
-                <Link route={Router.linkPage('modules/form/input')}><a>Show</a></Link>
+                <Link route={Router.linkPage('modules/form/index')}><Button raised primary label="Show" /></Link>
               </CardActions>
             </Card>
           </div>

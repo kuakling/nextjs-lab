@@ -38,7 +38,7 @@ export default class AboutPage extends React.Component {
             subtitle="kuakling@gmail.com"
           />
           <CardActions expander>
-            <Button flat label={<Link route={Router.linkPage('')}><a>Home</a></Link>} />
+            <Link route={Router.linkPage('')}><Button raised primary label="Home" /></Link>
             This Page Loading from a { this.props.server ? 'Server' : 'Client' }
           </CardActions>
           <CardText expandable>

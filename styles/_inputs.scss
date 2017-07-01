@@ -14,7 +14,8 @@ $input-box-color: $md-blue-grey-500;
 .md-text-field--floating-margin{
     margin-top: 0;
 }
-.md-text-field:focus{
+.md-text-field:focus,
+.md-floating-label--active + div[role="listbox"] .md-text-field{
     -webkit-box-shadow: 0px 0px 1px 0px $color-primary;
     -moz-box-shadow: 0px 0px 1px 0px $color-primary;
     box-shadow: 0px 0px 1px 0px $color-primary;
@@ -43,4 +44,17 @@ $input-box-color: $md-blue-grey-500;
 .md-password-btn{
     top: 17px;
     right: $input-padding+px;
+}
+
+
+//Select
+$select-padding: $input-padding * 2;
+.md-select-field__toggle .md-text-field {
+    padding: $select-padding+px 0 $select-padding+px $select-padding+px;
+}
+.md-select-field-menu--stretch .md-list {
+    min-width: 100%;
+}
+.md-select-field--btn{
+    height: ($input-padding*3)+px;
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
-import LayoutMain from "../../../layouts/main"
+import LayoutMain from "./layouts/main"
 
 import { DatePicker } from 'react-md/lib/Pickers'
 import TextField from 'react-md/lib/TextFields'
