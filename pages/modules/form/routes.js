@@ -14,6 +14,10 @@ const routes = [
   {
     page: 'modules/form/option',
     prettyUrl: '/form/option'
+  },
+  {
+    page: 'modules/form/date-time-picker',
+    prettyUrl: '/form/date_time_picker'
   }
 ];
 

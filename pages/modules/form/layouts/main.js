@@ -98,6 +98,14 @@ var LayoutMain = () => ({
                       leftIcon={<FontIcon>check_box</FontIcon>}
                       tileClassName='md-list-tile--mini'
                       primaryText={'Option'}
+                    />,
+                    <ListItem
+                      key='5'
+                      component={NavigationLink}
+                      href='modules/form/date-time-picker'
+                      leftIcon={<FontIcon>check_box</FontIcon>}
+                      tileClassName='md-list-tile--mini'
+                      primaryText={'Date and Time Picker'}
                     />
                 ]}
                 contentClassName='md-grid'
