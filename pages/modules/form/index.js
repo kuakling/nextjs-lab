@@ -17,17 +17,13 @@ class FormItem extends React.Component {
     render () {
         const itemRoute = 'modules/form/'+this.props.route
         return (
-            <div>
-                <div className="md-grid">
-                    <div className="md-cell md-cell--4">
-                        <Card>
-                            <CardTitle title={this.props.title} subtitle={this.props.subtitle} />
-                            <CardActions className="md-divider-border md-divider-border--top">
-                                <Link route={Router.linkPage(itemRoute)}><Button raised primary label="Show" /></Link>
-                            </CardActions>
-                        </Card>
-                    </div>
-                </div>
+            <div className="md-cell md-cell--4">
+                <Card>
+                    <CardTitle title={this.props.title} subtitle={this.props.subtitle} />
+                    <CardActions className="md-divider-border md-divider-border--top">
+                        <Link route={Router.linkPage(itemRoute)}><Button raised primary label="Show" /></Link>
+                    </CardActions>
+                </Card>
             </div>
         );
     }
@@ -45,9 +41,11 @@ export default class Index extends React.Component {
                     <title>Form Examples</title>
                 </Head>
                 <LayoutMain>
-                    <div className="content" style={{flex: 1}}>
+                    <div className="md-grid">
                         <FormItem route="input" title="Inputs" subtitle="Form inputs" />
                         <FormItem route="select" title="Select" subtitle="Form select" />
+                        <FormItem route="option" title="Option" subtitle="Form Option" />
+                        <FormItem route="date-time-picker" title="Date & Time Picker" subtitle="Form Date & Time Picker" />
                     </div>
                 </LayoutMain>
             </div>

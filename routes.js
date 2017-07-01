@@ -10,6 +10,10 @@ const routes = [
   {
     page: 'about',
     prettyUrl: '/about-us'
+  },
+  {
+    page: 'fetch',
+    prettyUrl: '/fetch'
   }
 ].concat(formRoute);
 

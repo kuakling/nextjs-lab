@@ -38,7 +38,7 @@ export default class IndexPage extends React.Component {
         <hr />
         <div className="md-grid grid-example">
           <div className="md-cell md-cell--4">
-            <Card className="weather-card">
+            <Card>
               <CardTitle title="About Page" subtitle="เกี่ยวกับเรา" />
               <CardActions className="md-divider-border md-divider-border--top">
                 <Link route={Router.linkPage('about')}><Button raised primary label="Show" /></Link>
@@ -46,14 +46,21 @@ export default class IndexPage extends React.Component {
             </Card>
           </div>
           <div className="md-cell md-cell--4">
-            <Card className="weather-card">
+            <Card>
               <CardTitle title="Input" subtitle="Form inputs on admin theme" />
               <CardActions className="md-divider-border md-divider-border--top">
                 <Link route={Router.linkPage('modules/form/index')}><Button raised primary label="Show" /></Link>
               </CardActions>
             </Card>
           </div>
-          <div className="md-cell md-cell--4">4</div>
+          <div className="md-cell md-cell--4">
+            <Card>
+              <CardTitle title="Fetch" subtitle="Fetch data from rest api" />
+              <CardActions className="md-divider-border md-divider-border--top">
+                <Link route={Router.linkPage('fetch')}><Button raised primary label="Show" /></Link>
+              </CardActions>
+            </Card>
+          </div>
         </div>
       </div>
     );
