@@ -1,6 +1,7 @@
 const UrlPrettifier = require('next-url-prettifier').default;
 
 const formRoute = require('./pages/modules/form/routes').default
+const restRoute = require('./pages/modules/rest/routes').default
  
 const routes = [
   {
@@ -15,7 +16,7 @@ const routes = [
     page: 'fetch',
     prettyUrl: '/fetch'
   }
-].concat(formRoute);
+].concat(formRoute, restRoute);
 
 
 const urlPrettifier = new UrlPrettifier(routes);

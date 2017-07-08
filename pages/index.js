@@ -1,28 +1,10 @@
-// import React from 'react'
-// import Link from 'next/link'
-// import LayoutMain from "../layouts/main"
-
-// export default class Index extends React.Component {
-//     render () {
-//         return (
-//             <div>
-//                 <LayoutMain>
-//                     <Link href={'about-us'}>
-//                         <a>About</a>
-//                     </Link>
-//                     <h1 className="bg-red-100"> Hello ReactJs and universal by NextJs</h1>
-//                 </LayoutMain>
-//             </div>
-//         );
-//     }
-// }
-
 import React from 'react';
 import {Link} from 'next-url-prettifier';
 import {Router} from '../routes';
 
 import Card from 'react-md/lib/Cards/Card';
 import CardTitle from 'react-md/lib/Cards/CardTitle';
+import CardText from 'react-md/lib/Cards/CardText'
 import CardActions from 'react-md/lib/Cards/CardActions';
 import Button from 'react-md/lib/Buttons';
 
@@ -58,6 +40,17 @@ export default class IndexPage extends React.Component {
               <CardTitle title="Fetch" subtitle="Fetch data from rest api" />
               <CardActions className="md-divider-border md-divider-border--top">
                 <Link route={Router.linkPage('fetch')}><Button raised primary label="Show" /></Link>
+              </CardActions>
+            </Card>
+          </div>
+          <div className="md-cell md-cell--4">
+            <Card>
+              <CardTitle title="CRUD" subtitle="Using axios for CRUD data from node mysql rest api" />
+                <CardText>
+                  Bug on Mobile: Can not update state from axois
+                </CardText>
+              <CardActions className="md-divider-border md-divider-border--top">
+                <Link route={Router.linkPage('modules/rest/users/index')}><Button raised primary label="Show" /></Link>
               </CardActions>
             </Card>
           </div>
